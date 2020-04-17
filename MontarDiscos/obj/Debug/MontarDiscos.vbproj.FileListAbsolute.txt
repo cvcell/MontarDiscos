@@ -1,0 +1,10 @@
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\obj\Debug\MontarDiscos.vbproj.GenerateResource.Cache
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\bin\Debug\MontarUSB.exe.config
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\bin\Debug\MontarUSB.exe
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\bin\Debug\MontarUSB.pdb
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\bin\Debug\MontarUSB.xml
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\obj\Debug\MontarUSB.Principal.resources
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\obj\Debug\MontarUSB.Resources.resources
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\obj\Debug\MontarUSB.exe
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\obj\Debug\MontarUSB.xml
+D:\cvcel\Documents\Visual Studio 2015\Projects\MontarDiscos\MontarDiscos\obj\Debug\MontarUSB.pdb

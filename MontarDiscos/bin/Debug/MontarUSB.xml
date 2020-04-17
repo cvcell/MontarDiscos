@@ -1,0 +1,196 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MontarUSB
+</name>
+</assembly>
+<members>
+<member name="T:MontarUSB.UsbEject.Device">
+ <summary>
+ A generic base class for physical devices.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.Index">
+ <summary>
+ Gets the device's index.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.DeviceClass">
+ <summary>
+ Gets the device's class instance.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.Path">
+ <summary>
+ Gets the device's path.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.InstanceHandle">
+ <summary>
+ Gets the device's instance handle.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.Class">
+ <summary>
+ Gets the device's class name.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.ClassGuid">
+ <summary>
+ Gets the device's class Guid as a string.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.Description">
+ <summary>
+ Gets the device's description.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.FriendlyName">
+ <summary>
+ Gets the device's friendly name.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.Capabilities">
+ <summary>
+ Gets the device's capabilities.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.IsUsb">
+ <summary>
+ Gets a value indicating whether this device is a USB device.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.Parent">
+ <summary>
+ Gets the device's parent device or null if this device has not parent.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Device.RemovableDevices">
+ <summary>
+ Gets this device's list of removable devices.
+ Removable devices are parent devices that can be removed.
+ </summary>
+</member>
+<member name="M:MontarUSB.UsbEject.Device.Eject(System.Boolean)">
+ <summary>
+ Ejects the device.
+ </summary>
+ <param name="allowUI">Pass true to allow the Windows shell to display any related UI element, false otherwise.</param>
+ <returns>null if no error occured, otherwise a contextual text.</returns>
+</member>
+<member name="M:MontarUSB.UsbEject.Device.CompareTo(System.Object)">
+ <summary>
+ Compares the current instance with another object of the same type.
+ </summary>
+ <param name="obj">An object to compare with this instance.</param>
+ <returns>A 32-bit signed integer that indicates the relative order of the comparands.</returns>
+</member>
+<member name="T:MontarUSB.UsbEject.DeviceCapabilities">
+ <summary>
+ Contains constants for determining devices capabilities.
+ This enumeration has a FlagsAttribute attribute that allows a bitwise combination of its member values.
+ </summary>
+</member>
+<member name="T:MontarUSB.UsbEject.DeviceClass">
+ <summary>
+ A generic base class for physical device classes.
+ </summary>
+</member>
+<member name="M:MontarUSB.UsbEject.DeviceClass.#ctor(System.Guid,System.IntPtr)">
+ <summary>
+ Initializes a new instance of the DeviceClass class.
+ </summary>
+ <param name="classGuid">A device class Guid.</param>
+ <param name="hwndParent">The handle of the top-level window to be used for any user interface or IntPtr.Zero for no handle.</param>
+</member>
+<member name="M:MontarUSB.UsbEject.DeviceClass.Dispose">
+ <summary>
+ Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.DeviceClass.ClassGuid">
+ <summary>
+ Gets the device class's guid.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.DeviceClass.Devices">
+ <summary>
+ Gets the list of devices of this device class.
+ </summary>
+</member>
+<member name="T:MontarUSB.UsbEject.DiskDeviceClass">
+ <summary>
+ The device class for disk devices.
+ </summary>
+</member>
+<member name="M:MontarUSB.UsbEject.DiskDeviceClass.#ctor">
+ <summary>
+ Initializes a new instance of the DiskDeviceClass class.
+ </summary>
+</member>
+<member name="T:MontarUSB.UsbEject.Volume">
+ <summary>
+ A volume device.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Volume.VolumeName">
+ <summary>
+ Gets the volume's name.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Volume.LogicalDrive">
+ <summary>
+ Gets the volume's logical drive in the form [letter]:\
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Volume.IsUsb">
+ <summary>
+ Gets a value indicating whether this volume is a based on USB devices.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Volume.Disks">
+ <summary>
+ Gets a list of underlying disks for this volume.
+ </summary>
+</member>
+<member name="P:MontarUSB.UsbEject.Volume.RemovableDevices">
+ <summary>
+ Gets a list of removable devices for this volume.
+ </summary>
+</member>
+<member name="M:MontarUSB.UsbEject.Volume.CompareTo(System.Object)">
+ <summary>
+ Compares the current instance with another object of the same type.
+ </summary>
+ <param name="obj">An object to compare with this instance.</param>
+ <returns>A 32-bit signed integer that indicates the relative order of the comparands.</returns>
+</member>
+<member name="T:MontarUSB.UsbEject.VolumeDeviceClass">
+ <summary>
+ The device class for volume devices.
+ </summary>
+</member>
+<member name="M:MontarUSB.UsbEject.VolumeDeviceClass.#ctor">
+ <summary>
+ Initializes a new instance of the VolumeDeviceClass class.
+ </summary>
+</member>
+<member name="T:MontarUSB.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:MontarUSB.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:MontarUSB.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+</members>
+</doc>
