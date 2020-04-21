@@ -1,3 +1,8 @@
+<p align="center">
+    <img src="MontarDiscos/favicon.svg" width="200" title="images">
+</p>
+
+
 # MontarDiscos
 aplicacion para simular en Windows el efecto de Linux o MAC OSX de que aparezca la unidad conectada por usb en el escritorio
 
